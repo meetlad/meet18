@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Account - ResumeDone</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 60%;
+        margin: 40px auto;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 20px 30px;
+    }
+
+    .premium-banner {
+        background-color: #0ba360;
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .premium-banner img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .premium-banner h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .premium-banner p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        color: #999;
+        font-size: 18px;
+        margin-top: 25px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        text-align: center;
+    }
+
+    .profile-photo img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ddd;
+    }
+
+    .save-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .save-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .delete-section {
+        background: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .delete-section p {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .delete-section a {
+        color: #e60000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .support {
+        margin-top: 20px;
+        font-size: 13px;
+        color: #555;
+    }
+
+    .support a {
+        color: #007bff;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Premium Banner -->
+    <div class="premium-banner">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="premium icon">
+        <div>
+            <h2>Premium Account</h2>
+            <p>You have a premium account, granting you access to all the remarkable features offered by ResumeDone. 
+               With this privilege, you can enjoy unlimited downloads of resumes and cover letters in both PDF and Word formats.</p>
+        </div>
+    </div>
+
+    <!-- Personal Info -->
+    <h3>Personal Information</h3>
+
+    <form>
+        <div class="form-group">
+            <div class="form-control">
+                <label>First Name</label>
+                <input type="text" value="Petter">
+            </div>
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" value="Cetera">
+            </div>
+            <div class="profile-photo">
+                <img src="https://i.pravatar.cc/90" alt="profile photo">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-control">
+                <label>City</label>
+                <input type="text" value="London">
+            </div>
+            <div class="form-control">
+                <label>Postal Code</label>
+                <input type="text" value="E2 4XF">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-control">
+                <label>Address</label>
+                <input type="text" value="123 Example">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" value="petter@gmail.com">
+            </div>
+            <div class="form-control">
+                <label>Phone</label>
+                <input type="text" value="+442233334444">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" value="Password">
+            </div>
+        </div>
+
+        <button type="submit" class="save-btn">Save</button>
+    </form>
+
+    <!-- Delete Section -->
+    <div class="delete-section">
+        <p>If you delete your account you'll be permanently removing it from our systems — you can't undo it.</p>
+        <a href="#">Yes, Delete my account</a>
+    </div>
+
+    <!-- Support -->
+    <p class="support">
+        Get in touch with our <a href="#">support team</a> if you have any questions or want to leave some feedback.<br>
+        We’ll be happy to hear from you.
+    </p>
+</div>
+
+</body>
+</html>
